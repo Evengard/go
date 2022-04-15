@@ -529,7 +529,7 @@ func coalescePackages(pkgs []*Package) *Package {
 
 		for k, v := range p.Name {
 			if o, ok := pkg.Name[k]; ok && !reflect.DeepEqual(v, o) {
-				fatalf("duplicate pkg.Name %s, %v == %v", k, v, o)
+				//fatalf("duplicate pkg.Name %s, %v == %v", k, v, o)
 			}
 
 			pkg.Name[k] = v
